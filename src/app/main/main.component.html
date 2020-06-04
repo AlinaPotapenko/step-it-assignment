@@ -1,6 +1,10 @@
 <div class="container">
     <p>Total amount of the opened pages: {{ quantityOfPages }}</p>
     <p>Random number: {{ randomNumber }}</p>
-    <a routerLink="/main" target="_blank" (click)="addNewPage()">Open new page</a>
-    <button (click)="closePages()">Close pages</button>
+    <a routerLink="/main" target="_blank" (click)="addNewPage()" class="button open"> 
+        Open new page
+    </a>
+    <button (click)="closePages()" class="button close">    
+        Close pages
+    </button>
 </div>
